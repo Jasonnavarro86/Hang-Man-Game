@@ -8,30 +8,22 @@
     <title>Document</title>
 </head>
 
-<body>
-    <script>
-        // My Varirable Storage 
-        var wins = 0;
-        var currentLet = [];
-        var numberOfGuesses = 10;
-
-
-        // My Random Word Varirable and Formula 
-        var randArray = ["spider man", "star lord", "iron man", "hulk", "goku"];
-
-        var randWord = randArray[Math.floor(Math.random() * ((randArray.length - 1) + 1))];
-        console.log(randWord);
-
-
-        // Im making this section for letters the user has already pressed
-       var currentWord = document.getElementById(currentWord);
-       var numberOfGuesses = document.getElementById(numberOfGuesses );
-       var lettersUsed = document.getElementById(usedLet);
-       var wins = document.getElementById(wins);
+<body >
+   
     
-            lettersUsed.addEventListener(keydown, function(){})
-
-    </script>
+    <style>
+        .mainContainer{
+            background-color:black;
+            color: white;
+        }
+        .hangManDiv{
+            background-color: #34aaa2;
+        }
+        #currentWord, #currentWord1, #currentWord2, #currentWord3, #currentWord4, #currentWord5, #currentWord6, #currentWord7, #currentWord8 {
+            display: hidden;
+        }
+       
+    </style>
 
     <!-- my Main Container -->
     <div class="container mainContainer">
@@ -45,9 +37,19 @@
                 <p>Wins</p>
                 <p id="wins"></p>
                 <p>Current Word</p>
-                <p id="currentWord"></p>
+                <div id="currentWord"></div>
+                <div id="currentWord1"></div>
+                <div id="currentWord2"></div>
+                <div id="currentWord3"></div>
+                <div id="currentWord4"></div>
+                <div id="currentWord5"></div>
+                <div id="currentWord6"></div>
+                <div id="currentWord7"></div>
+                <div id="currentWord8"></div>
+                
+                <div class="backColor"></div>
                 <p>Number Of Guesses Left</p>
-                <p id="numberOfGuesses"></p>
+                <p id="numberOfGuesses">numberOfGuesses</p>
                 <p>Letters Used</p> 
                 <p id="usedLet"></p>
 
@@ -57,6 +59,11 @@
             <div class="section2"></div>
         </div>
     </div>
+
+    <script src="assets/javascript/game.js">
+        
+ 
+     </script>
 </body>
 
 </html>
