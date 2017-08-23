@@ -1,4 +1,4 @@
-// STARTS My Varirable Storage 
+// STARTS This section is where I am storing my variables. 
 var wins = 0;
 var currentLet = [];
 var numberOfGuesses = 10;
@@ -6,83 +6,100 @@ var currentWord = document.getElementById("currentWord");
 var numberOfGuesses = document.getElementById("numberOfGuesses");
 var lettersUsed = document.getElementById("usedLet");
 var wins = document.getElementById("wins");
-// Ends ______________________________
-
-// STARTS My Random Word Varirable and Formula _________
 var randArray = ["spiderman", "starlord", "ironman", "hulk", "goku"];
+// Ends. ______________________________
 
+// STARTS (My Random Word Varirable and Formula. _________
 var randWord = randArray[Math.floor(Math.random() * ((randArray.length - 1) + 1))];
 console.log("1", randWord);
-// Ends ______________________________
+// Ends. ______________________________
 
 
-//START this section is for displaying the letters the user has already pressed(part 1)  &&  Im adding if statments to make the letters appear on the document if the key pressed matches any leters of the random word (part 2)____________
+//STARTS (PART 1) this section is for displaying the letters the user has already pressed. (PART 2) Im adding if statments to make the letters appear if the key pressed is the right letter.____________
 
 // PART 1
 addEventListener("keydown", function (e) {
-  
-    var transForm = event.key;
-    currentLet.push(transForm);
-    document.getElementById("usedLet").innerHTML = currentLet;
-  console.log("transForm",transForm);
-  console.log("randWord",randWord[0]);
 
-  // START this is where my (non-DRY) formula for letters to appear on the document when the correct ket is pressed.
-  
-  if(transForm === randWord[0]){
-    alert("boom");
+  var transForm = event.key;
+  currentLet.push(transForm);
+  document.getElementById("usedLet").innerHTML = currentLet;
+
+
+
+  //PART 2 (non-DRY) 
+  if (transForm === randWord[0]) {
     document.getElementById("currentWord").innerHTML = randWord[0];
   }
-  });
-  // Ends ______________________________
+  if (transForm === randWord[1]) {
+    document.getElementById("currentWord1").innerHTML = randWord[1];
+  }
+  if (transForm === randWord[2]) {
+    document.getElementById("currentWord2").innerHTML = randWord[2];
+  }
+  if (transForm === randWord[3]) {
+    document.getElementById("currentWord3").innerHTML = randWord[3];
+  }
+  if (transForm === randWord[4]) {
+    document.getElementById("currentWord4").innerHTML = randWord[4];
+  }
+  if (transForm === randWord[5]) {
+    document.getElementById("currentWord5").innerHTML = randWord[5];
+  }
+  if (transForm === randWord[6]) {
+    document.getElementById("currentWord6").innerHTML = randWord[6];
+  }
+  if (transForm === randWord[7]) {
+    document.getElementById("currentWord7").innerHTML = randWord[7];
+  }
+  if (transForm === randWord[8]) {
+    document.getElementById("currentWord8").innerHTML = randWord[8];
+  }
+});
+// Ends. (PART 1 & PART 2) ______________________________
 
 
 
+//START Im making this section to generate blank spaces the length of the word for user to know how many letters are in the word.________
 
-// document.getElementById("currentWord1").innerHTML = randWord[1];
-// if (event.key = randWord[1]) {
-//   document.getElementById("currentWord1").style.display = 'block';
-// };
+if (randWord.length === 4) {
+  document.getElementById("line").innerHTML  = "_____";
+  document.getElementById("line1").innerHTML = "_____";
+  document.getElementById("line2").innerHTML = "_____";
+  document.getElementById("line3").innerHTML = "_____";
+};
 
-// document.getElementById("currentWord2").innerHTML = randWord[2];
-// if (event.key = randWord[2]) {
-//   document.getElementById("currentWord2").style.display = 'block';
-// };
-// document.getElementById("currentWord3").innerHTML = randWord[3];
-// if (event.key = randWord[3]) {
-//   document.getElementById("currentWord3").style.display = 'block';
-// };
-// document.getElementById("currentWord4").innerHTML = randWord[4];
-// if (event.key = randWord[4]) {
-//   document.getElementById("currentWord4").style.display = 'block';
-// };
-// document.getElementById("currentWord5").innerHTML = randWord[5];
-// if (event.key = randWord[5]) {
-//   document.getElementById("currentWord5").style.display = 'block';
-// };
-// document.getElementById("currentWord6").innerHTML = randWord[6];
-// if (event.key = randWord[6]) {
-//   document.getElementById("currentWord6").style.display = 'block';
-// };
-// document.getElementById("currentWord7").innerHTML = randWord[7];
-// if (event.key = randWord[7]) {
-//   document.getElementById("currentWord7").style.display = 'block';
-// };
-// document.getElementById("currentWord8").innerHTML = randWord[8];
-// if (event.key = randWord[8]) {
-//   document.getElementById("currentWord8").style.display = 'block';
-// };
-// document.getElementById("currentWord9").innerHTML = randWord[9];
-// if (event.key = randWord[9]) {
-//   document.getElementById("currentWord9").style.display = 'block';
-// };
+if (randWord.length === 7) {
+  document.getElementById("line").innerHTML  = "_____";
+  document.getElementById("line1").innerHTML = "_____";
+  document.getElementById("line2").innerHTML = "_____";
+  document.getElementById("line3").innerHTML = "_____";
+  document.getElementById("line4").innerHTML = "_____";
+  document.getElementById("line5").innerHTML = "_____";
+  document.getElementById("line6").innerHTML = "_____";
+};
 
-// Ends ______________________________
+if (randWord.length === 8) {
+  document.getElementById("line").innerHTML  = "_____";
+  document.getElementById("line1").innerHTML = "_____";
+  document.getElementById("line2").innerHTML = "_____";
+  document.getElementById("line3").innerHTML = "_____";
+  document.getElementById("line4").innerHTML = "_____";
+  document.getElementById("line5").innerHTML = "_____";
+  document.getElementById("line6").innerHTML = "_____";
+  document.getElementById("line7").innerHTML = "_____";
+};
 
-
-
-
-
+if (randWord.length === 9) {
+  document.getElementById("line").innerHTML  = "_____";
+  document.getElementById("line1").innerHTML = "_____";
+  document.getElementById("line2").innerHTML = "_____";
+  document.getElementById("line3").innerHTML = "_____";
+  document.getElementById("line4").innerHTML = "_____";
+  document.getElementById("line5").innerHTML = "_____";
+  document.getElementById("line6").innerHTML = "_____";
+  document.getElementById("line7").innerHTML = "_____";
+  document.getElementById("line8").innerHTML = "_____";
+};
 
 
 

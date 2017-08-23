@@ -8,21 +8,30 @@
     <title>Document</title>
 </head>
 
-<body >
-   
-    
+<body>
+
+
     <style>
-        .mainContainer{
-            background-color:black;
+        .mainContainer {
+            background-color: black;
             color: white;
         }
-        .hangManDiv{
+
+        .hangManDiv {
             background-color: #34aaa2;
         }
-        #currentWord, #currentWord1, #currentWord2, #currentWord3, #currentWord4, #currentWord5, #currentWord6, #currentWord7, #currentWord8 {
+
+        #currentWord,
+        #currentWord1,
+        #currentWord2,
+        #currentWord3,
+        #currentWord4,
+        #currentWord5,
+        #currentWord6,
+        #currentWord7,
+        #currentWord8 {
             display: hidden;
         }
-       
     </style>
 
     <!-- my Main Container -->
@@ -37,33 +46,59 @@
                 <p>Wins</p>
                 <p id="wins"></p>
                 <p>Current Word</p>
-                <div id="currentWord"></div>
-                <div id="currentWord1"></div>
-                <div id="currentWord2"></div>
-                <div id="currentWord3"></div>
-                <div id="currentWord4"></div>
-                <div id="currentWord5"></div>
-                <div id="currentWord6"></div>
-                <div id="currentWord7"></div>
-                <div id="currentWord8"></div>
-                
+
+
+
+                <!-- START "SHOW BOXES" this is where I make my boxes appear for showing word length and making right letters appear -->
+                <div class="showWord">
+                    <div id="currentWord"></div>
+                    <div id="line"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord1"></div>
+                    <div id="line1"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord2"></div>
+                    <div id="line2"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord3"></div>
+                    <div id="line3"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord4"></div>
+                    <div id="line4"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord5"></div>
+                    <div id="line5"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord6"></div>
+                    <div id="line6"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord7"></div>
+                    <div id="line7"></div>
+                </div>
+                <div class="showWord">
+                    <div id="currentWord8"></div>
+                    <div id="line8"></div>
+                </div>
+
+                <!-- SHOW BOXES ENDS -->
+
                 <div class="backColor"></div>
                 <p>Number Of Guesses Left</p>
-                <p id="numberOfGuesses">numberOfGuesses</p>
-                <p>Letters Used</p> 
-                <p id="usedLet"></p>
-
-
-            </div>
-
-            <div class="section2"></div>
-        </div>
-    </div>
-
-    <script src="assets/javascript/game.js">
-        
- 
-     </script>
+             <p id="numberOfGuesses">numberOfGuesses</p>
+            <p>Letters Used</p>
+            <p id="usedLet"></p>
+            
+            </div <div class="section2"></div>
+        </div> </div>
+        <script src="assets/javascript/game.js">
+        </script>
 </body>
 
 </html>
