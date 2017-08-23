@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // My Varirable Storage 
+        var wins = 0;
+        var currentLet = [];
+        var numberOfGuesses = 10;
+
+
+        // My Random Word Varirable and Formula 
+        var randArray = ["spider man", "star lord", "iron man", "hulk", "goku"];
+
+        var randWord = randArray[Math.floor(Math.random() * ((randArray.length - 1) + 1))];
+        console.log(randWord);
+
+
+        // Im making this section for letters the user has already pressed
+       var currentWord = document.getElementById(currentWord);
+       var numberOfGuesses = document.getElementById(numberOfGuesses );
+       var lettersUsed = document.getElementById(usedLet);
+       var wins = document.getElementById(wins);
+    
+            lettersUsed.addEventListener(keydown, function(){})
+
+    </script>
+
+    <!-- my Main Container -->
+    <div class="container mainContainer">
+        <img>
+        <h1>Guess</h1>
+        <!-- This contianer holds the hangman content-->
+        <div class="container hangManDiv">
+
+            <div class="section1">
+                <h3>Press Any Key To Get Started</h3>
+                <p>Wins</p>
+                <p id="wins"></p>
+                <p>Current Word</p>
+                <p id="currentWord"></p>
+                <p>Number Of Guesses Left</p>
+                <p id="numberOfGuesses"></p>
+                <p>Letters Used</p> 
+                <p id="usedLet"></p>
+
+
+            </div>
+
+            <div class="section2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
