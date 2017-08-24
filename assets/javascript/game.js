@@ -95,9 +95,6 @@ addEventListener("keydown", function (e) {
     ironArray = [];
   }
 
-
-
-
   // PART 4: HERE I HAVE MY RESETS FOR SOLVING ANY OF MY 5 WORDS (non DRY). _____
 
   // RESET 1 SPIDER MAN SOLVED RESET
@@ -419,6 +416,13 @@ addEventListener("keydown", function (e) {
     ironArray = [];
   }
 
+
+
+  // if (transForm === "s" && randWord === randArray[1]) {
+  //   starlordArray.push(transForm);
+
+  // }
+
   // ENDS PART 4 (RESETS)_______________________
 
 });
@@ -470,6 +474,7 @@ function makeLines() {
 // STARTS: This calls my "makeLines" function for onload of page;
 makeLines();
 // Ends. ______________________________
+
 
 
 // This is the end of my program "SUPER HERO HANG MAN". MADE FOR MY 2 BOYS AIDEN AND JACOB.

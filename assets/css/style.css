@@ -62,6 +62,7 @@ body {
     padding-top: 100px;
     clear: both;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -123,9 +124,9 @@ body {
 
 .pushDown {
     margin-top: 140px;
-    position: fixed;
-    bottom: 162px;
-    left: 422px;
+    position: absolute;
+    bottom: 85px;
+    left: 320px;
     background-color: #3D8CD2;
     width: 100%;
     max-width: 530px;
