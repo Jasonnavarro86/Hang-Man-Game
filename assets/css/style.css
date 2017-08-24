@@ -1,0 +1,136 @@
+/* General styling for entire page */
+
+p {
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+/* This section is for keeping my content in a contaier of 1,170px; */
+
+.mainContainer {
+    color: #E5DEDE;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0px auto;
+    clear: both;
+    overflow: auto;
+}
+
+.showWord {
+    max-width: 32px;
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/* This section is for putting in the banner I made on canva and fixing header height */
+
+header {
+    position: fixed;
+}
+
+.heightFix {
+    height: 100px;
+    
+}
+
+
+/* Im putting a backround image on my body */
+
+body {
+    background-image: url("http://geodavephotography.com/images/marvel-wallpapers/35868076-marvel-wallpapers.jpg");
+    background-repeat: none;
+    background-size: 500px;
+}
+
+
+/* This section is for the letters to display inline and not block */
+
+.displayBox {
+    width: 100%;
+    max-width: 130px;
+}
+
+
+/* main section holding my content */
+
+.hangManDiv {
+    padding-top: 100px;
+    clear: both;
+    overflow: hidden;
+}
+
+
+/* START: Three colomns section 1 for my score, section 2 is the game display boxes and word bank, section 3 is an image with a paragraph. */
+
+.section1 {
+    /* background-color: #A64343; */
+    width: 100%;
+    max-width: 320px;
+    float: left;
+    display: block;
+}
+
+.section2 {
+    /* background-color: #3CBD7E; */
+    width: 100%;
+    max-width: 530px;
+    float: left;
+    display: block;
+    padding-top: 90px;
+    background-color: #3D8CD2;
+    z-index: 99;
+}
+
+
+.section3 {
+    /* background-color: #3884A6; */
+    width: 100%;
+    max-width: 320px;
+    float: right;
+    display: block;
+    height: 300px;
+}
+
+
+/* ENDS________________________________________ */
+
+/* This is to make the numner of guesses left a diffrent color */
+#numberOfGuesses{
+    color: #D23D3D
+}
+/* this is my display boxes being hidden until key is pressed */
+
+#currentWord,
+#currentWord1,
+#currentWord2,
+#currentWord3,
+#currentWord4,
+#currentWord5,
+#currentWord6,
+#currentWord7,
+#currentWord8 {
+    display: hidden;
+    z-index: 99;
+}
+
+
+/* This section is to push dowm my word bank display to avoid disruption from the divs becoming visible. */
+
+.pushDown {
+    margin-top: 140px;
+    position: fixed;
+    bottom: 220px;
+    left: 455px;
+    background-color: #3D8CD2;
+    width: 100%;
+    max-width: 530px;
+    height: 140px;
+    padding-top: 0px;
+    line-height: 70px;
+    border-top: 20px solid #3D8CD2;
+}

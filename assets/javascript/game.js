@@ -61,34 +61,39 @@ addEventListener("keydown", function (e) {
   }
 
 
- //PART 3 this is where I reset my code if the number of guesses is equal to 10.
- if (currentLet.length === 10) {
-  currentLet = [];
-  numberOfGuesses = 10;
-  document.getElementById("numberOfGuesses").innerHTML = 10;
-  document.getElementById("usedLet").innerHTML = "";
-  randWord = randArray[Math.floor(Math.random() * ((randArray.length - 1) + 1))];
-  newLength = randWord.length;
-  document.getElementById("line").innerHTML = "";
-  document.getElementById("line1").innerHTML = "";
-  document.getElementById("line2").innerHTML = "";
-  document.getElementById("line3").innerHTML = "";
-  document.getElementById("line4").innerHTML = "";
-  document.getElementById("line5").innerHTML = "";
-  document.getElementById("line6").innerHTML = "";
-  document.getElementById("line7").innerHTML = "";
-  document.getElementById("line8").innerHTML = "";
-  document.getElementById("currentWord").innerHTML = "";
-  document.getElementById("currentWord1").innerHTML = "";
-  document.getElementById("currentWord2").innerHTML = "";
-  document.getElementById("currentWord3").innerHTML = "";
-  document.getElementById("currentWord4").innerHTML = "";
-  document.getElementById("currentWord5").innerHTML = "";
-  document.getElementById("currentWord6").innerHTML = "";
-  document.getElementById("currentWord7").innerHTML = "";
-  document.getElementById("currentWord8").innerHTML = "";
-  makeLines();
-}
+  //PART 3 this is where I reset my code if the number of guesses is equal to 10.
+  if (currentLet.length === 10) {
+    currentLet = [];
+    numberOfGuesses = 10;
+    document.getElementById("numberOfGuesses").innerHTML = 10;
+    document.getElementById("usedLet").innerHTML = "";
+    randWord = randArray[Math.floor(Math.random() * ((randArray.length - 1) + 1))];
+    newLength = randWord.length;
+    document.getElementById("line").innerHTML = "";
+    document.getElementById("line1").innerHTML = "";
+    document.getElementById("line2").innerHTML = "";
+    document.getElementById("line3").innerHTML = "";
+    document.getElementById("line4").innerHTML = "";
+    document.getElementById("line5").innerHTML = "";
+    document.getElementById("line6").innerHTML = "";
+    document.getElementById("line7").innerHTML = "";
+    document.getElementById("line8").innerHTML = "";
+    document.getElementById("currentWord").innerHTML = "";
+    document.getElementById("currentWord1").innerHTML = "";
+    document.getElementById("currentWord2").innerHTML = "";
+    document.getElementById("currentWord3").innerHTML = "";
+    document.getElementById("currentWord4").innerHTML = "";
+    document.getElementById("currentWord5").innerHTML = "";
+    document.getElementById("currentWord6").innerHTML = "";
+    document.getElementById("currentWord7").innerHTML = "";
+    document.getElementById("currentWord8").innerHTML = "";
+    makeLines();
+    gokuArray = [];
+    spiderArray = [];
+    starlordArray = [];
+    hulkArray = [];
+    ironArray = [];
+  }
 
 
 
@@ -99,40 +104,40 @@ addEventListener("keydown", function (e) {
   // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
   if (transForm === "s" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
-    
+
+
   }
   if (transForm === "p" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "i" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "d" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "e" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "r" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-   
+
   }
   if (transForm === "m" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "a" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   if (transForm === "n" && randWord === randArray[0]) {
     spiderArray.push(transForm);
-    
+
   }
   // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
   if (spiderArray.length === 9 && randWord === randArray[0]) {
@@ -162,43 +167,47 @@ addEventListener("keydown", function (e) {
     document.getElementById("currentWord6").innerHTML = "";
     document.getElementById("currentWord7").innerHTML = "";
     document.getElementById("currentWord8").innerHTML = "";
+    gokuArray = [];
     spiderArray = [];
+    starlordArray = [];
+    hulkArray = [];
+    ironArray = [];
   }
-  
+
 
   // RESET 2 STAR LORD SOLVED RESET
   // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
   if (transForm === "s" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-   
+
   }
   if (transForm === "t" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-    
+
   }
   if (transForm === "a" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-    
+
   }
   if (transForm === "r" && randWord === randArray[1]) {
     starlordArray.push(transForm);
     starlordArray.push(transForm);
-    
+
   }
   if (transForm === "l" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-   
+
   }
   if (transForm === "o" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-    
+
   }
-  
+
   if (transForm === "d" && randWord === randArray[1]) {
     starlordArray.push(transForm);
-   
+
   }
-// here if the empty array equals the length of the word then player gets a win and resets game for a new word.
+  // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
   if (starlordArray.length === 8 && randWord === randArray[1]) {
     currentLet = [];
     numberOfGuesses = 10;
@@ -226,40 +235,44 @@ addEventListener("keydown", function (e) {
     document.getElementById("currentWord6").innerHTML = "";
     document.getElementById("currentWord7").innerHTML = "";
     document.getElementById("currentWord8").innerHTML = "";
+    gokuArray = [];
+    spiderArray = [];
     starlordArray = [];
-   
-  }
- 
+    hulkArray = [];
+    ironArray = [];
 
-   // RESET 3 IRON MAN SOLVED RESET
-    // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
-   if (transForm === "i" && randWord === randArray[2]) {
+  }
+
+
+  // RESET 3 IRON MAN SOLVED RESET
+  // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
+  if (transForm === "i" && randWord === randArray[2]) {
     ironArray.push(transForm);
-    
+
   }
   if (transForm === "r" && randWord === randArray[2]) {
     ironArray.push(transForm);
-    
+
   }
   if (transForm === "o" && randWord === randArray[2]) {
     ironArray.push(transForm);
- 
+
   }
   if (transForm === "n" && randWord === randArray[2]) {
     ironArray.push(transForm);
     ironArray.push(transForm);
-   
+
   }
   if (transForm === "m" && randWord === randArray[2]) {
     ironArray.push(transForm);
-   
+
   }
   if (transForm === "a" && randWord === randArray[2]) {
     ironArray.push(transForm);
-   
+
   }
-  
- // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
+
+  // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
 
   if (ironArray.length === 7 && randWord === randArray[2]) {
     currentLet = [];
@@ -288,28 +301,32 @@ addEventListener("keydown", function (e) {
     document.getElementById("currentWord6").innerHTML = "";
     document.getElementById("currentWord7").innerHTML = "";
     document.getElementById("currentWord8").innerHTML = "";
+    gokuArray = [];
+    spiderArray = [];
+    starlordArray = [];
+    hulkArray = [];
     ironArray = [];
   }
-  
 
-  
+
+
   // RESET 4 HULK SOLVED RESET
-   // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
+  // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
   if (transForm === "h" && randWord === randArray[3]) {
     hulkArray.push(transForm);
-    
+
   }
   if (transForm === "u" && randWord === randArray[3]) {
     hulkArray.push(transForm);
-    
+
   }
   if (transForm === "l" && randWord === randArray[3]) {
     hulkArray.push(transForm);
-    
+
   }
   if (transForm === "k" && randWord === randArray[3]) {
     hulkArray.push(transForm);
-    
+
   }
   // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
   if (hulkArray.length === 4 && randWord === randArray[3]) {
@@ -339,28 +356,32 @@ addEventListener("keydown", function (e) {
     document.getElementById("currentWord6").innerHTML = "";
     document.getElementById("currentWord7").innerHTML = "";
     document.getElementById("currentWord8").innerHTML = "";
+    gokuArray = [];
+    spiderArray = [];
+    starlordArray = [];
     hulkArray = [];
-   
+    ironArray = [];
+
   }
- 
+
 
   // RESET 5 GOKU SOLVED RESET
-   // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
+  // here if the right key is pressed it is pushed into an empty array and disables it from counting again. 
   if (transForm === "g" && randWord === randArray[4]) {
     gokuArray.push(transForm);
-   
+
   }
   if (transForm === "o" && randWord === randArray[4]) {
     gokuArray.push(transForm);
-    
+
   }
   if (transForm === "k" && randWord === randArray[4]) {
     gokuArray.push(transForm);
-    
+
   }
   if (transForm === "u" && randWord === randArray[4]) {
     gokuArray.push(transForm);
-    
+
   }
   // here if the empty array equals the length of the word then player gets a win and resets game for a new word.
 
@@ -392,8 +413,12 @@ addEventListener("keydown", function (e) {
     document.getElementById("currentWord7").innerHTML = "";
     document.getElementById("currentWord8").innerHTML = "";
     gokuArray = [];
+    spiderArray = [];
+    starlordArray = [];
+    hulkArray = [];
+    ironArray = [];
   }
- 
+
   // ENDS PART 4 (RESETS)_______________________
 
 });
@@ -448,23 +473,3 @@ makeLines();
 
 
 // This is the end of my program "SUPER HERO HANG MAN". MADE FOR MY 2 BOYS AIDEN AND JACOB.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
