@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SUPER HERO HANGMAN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-   
+
 </head>
 
 <body>
@@ -17,76 +19,46 @@
 
     <!-- my Main Container -->
     <div class="container mainContainer">
-       <header class="mainContainer header1"><img class="heightFix" src="assets/images/JASONHANGMAN.png" alt="a banner I made on canva" width="1170"></header>
-        
+
+
         <!-- This contianer holds the hangman content-->
-        <div class="container hangManDiv">
+        <div class="container row hangManDiv">
 
-            <!-- THis section hold the instruction picture and the score -->
-            <div class="section1">
-                <img src="assets/images/takeaguess.png" alt="spiderman" width="328px">
-                    <p>Wins</p>
-                    <p id="wins">0</p>
+
+            <div class="section1 container col">
+                <img class="spider" src="assets/images/takeaguess.png" alt="spiderman" width="228px">
+                <p class="wins">Good Guys</p>
+                <p id="wins" class="wins">0</p>
             </div>
             
+            <div class="col container">
+                <img>
+                <p class="title">Number Of Guesses Left</p>
+                <p id="numberOfGuesses">10</p>
+            </div>
             
-            <!-- START "DISPLAY BOXES" this is where I make my letters and lines appear for showing word length and making right letters appear -->
-            <div class="displayBox section2">
-                    <p>Number Of Guesses Left</p>
-                    <p id="numberOfGuesses">10</p>
-                <div class="showWord">
-                    <div id="currentWord" class="showWord"></div>
-                    <div id="line" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord1" class="showWord"></div>
-                    <div id="line1" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord2" class="showWord"></div>
-                    <div id="line2" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord3" class="showWord"></div>
-                    <div id="line3" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord4" class="showWord"></div>
-                    <div id="line4" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord5" class="showWord"></div>
-                    <div id="line5" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord6" class="showWord"></div>
-                    <div id="line6" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord7" class="showWord"></div>
-                    <div id="line7" class="showWord"></div>
-                </div>
-                <div class="showWord">
-                    <div id="currentWord8" class="showWord"></div>
-                    <div id="line8" class="showWord"></div>
-                </div>
-                
+
+
+            <div class="col container ">
+                <img src="https://img03.deviantart.net/ffa7/i/2011/002/e/8/dr__doom_p__series_by_thuddleston-d36b41a.jpg" alt="spiderman"
+                    width="208px">
+                <p class="loses">Bad Guys</p>
+                <p id="loses" class="loses">0</p>
+
             </div>
-            <div class="pushDown">
-                    <p>Letters Used</p>
-            <p id="usedLet">Word Bank</p></div>
 
-            <!-- SHOW BOXES ENDS -->
-
-           
-
-
-
-            <div class="section3">
-                        <img src="assets/images/pressakey.png" alt="spiderman" width="328px">
-                        <p>Help Us Defeat<br> Dr. Doom</p>
-            </div>
         </div>
+        <!-- START "DISPLAY BOXES" this is where I make my letters and lines appear for showing word length and making right letters appear -->
+
+
+
+        <div id="line" class="showWord ">_ _ _ _ _ _ _ </div>
+        <div class="wordBank">
+            <p>Word Bank</p>
+            <div id="wordBank" class="showWord "></div>
+        </div>
+
+
     </div>
     <script src="assets/javascript/game.js">
     </script>

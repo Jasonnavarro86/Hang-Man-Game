@@ -1,5 +1,4 @@
 /* General styling for entire page */
-
 p {
     font-family: 'Love Ya Like A Sister', cursive;
     text-align: center;
@@ -7,131 +6,64 @@ p {
     font-weight: 700;
 }
 
-
-/* This section is for keeping my content in a contaier of 1,170px; */
-
 .mainContainer {
-    color: #E5DEDE;
-    width: 100%;
-    max-width: 1170px;
+    color: #E1E1E1;
     margin: 0px auto;
     clear: both;
     overflow: auto;
 }
-
-.showWord {
-    max-width: 32px;
-    float: left;
-    padding: 10px;
-    font-size: 20px;
-}
-
-
-/* This section is for putting in the banner I made on canva and fixing header height */
-
-header {
-    position: fixed;
-}
-
-.heightFix {
-    height: 100px;
-    
-}
-
-
-/* Im putting a backround image on my body */
-
 body {
-    background-image: url("http://geodavephotography.com/images/marvel-wallpapers/35868076-marvel-wallpapers.jpg");
-    background-repeat: none;
-    background-size: 500px;
+
+   background-image: url("http://x.annihil.us/u/prod/marvel/i/mg/8/b0/537ba702ad5b3.gif");
+   background-size:100%;
+   
 }
 
 
-/* This section is for the letters to display inline and not block */
-
-.displayBox {
-    width: 100%;
-    max-width: 130px;
-}
-
-
-/* main section holding my content */
-
-.hangManDiv {
-    padding-top: 100px;
-    clear: both;
-    overflow: hidden;
-    position: relative;
-}
-
-
-/* START: Three colomns section 1 for my score, section 2 is the game display boxes and word bank, section 3 is an image with a paragraph. */
-
-.section1 {
-    /* background-color: #A64343; */
-    width: 100%;
-    max-width: 320px;
-    float: left;
-    display: block;
-}
-
-.section2 {
-    /* background-color: #3CBD7E; */
-    width: 100%;
-    max-width: 530px;
-    float: left;
-    display: block;
-    padding-top: 90px;
-    background-color: #3D8CD2;
-    z-index: 99;
-}
-
-
-.section3 {
-    /* background-color: #3884A6; */
-    width: 100%;
-    max-width: 320px;
-    float: right;
-    display: block;
-    height: 300px;
-}
-
-
-/* ENDS________________________________________ */
-
-/* This is to make the numner of guesses left a diffrent color */
 #numberOfGuesses{
-    color: #D23D3D
-}
-/* this is my display boxes being hidden until key is pressed */
+    color:#D22727;
+  
+    padding: 20%;
 
-#currentWord,
-#currentWord1,
-#currentWord2,
-#currentWord3,
-#currentWord4,
-#currentWord5,
-#currentWord6,
-#currentWord7,
-#currentWord8 {
-    display: hidden;
-    z-index: 99;
+}
+.title{
+    color:#FFFFFF;
+
 }
 
 
-/* This section is to push dowm my word bank display to avoid disruption from the divs becoming visible. */
+#line{
 
-.pushDown {
-    margin-top: 140px;
-    position: absolute;
-    bottom: 85px;
-    left: 320px;
-    background-color: #3D8CD2;
-    width: 100%;
-    max-width: 530px;
-    height: 140px;
-    padding-top: 0px;
-    line-height: 70px;
-    border-top: 20px solid #3D8CD2;
+   color: #FFFFFF;
+   font-size: 50px;
+   text-align: center;
+   height: 100px;
+}
+
+#wordBank{
+   
+   color: #FFFFFF;
+   font-size: 30px; 
+   text-align: center;
+   height:2em;
+   border-top: 1px solid #FFFFFF;
+   padding: 7px;
+   margin-top: 15px;
+   max-width: 50%;
+   margin-left: 9.3em;
+}
+
+.wins{
+   
+   margin-left: 3em;
+    color: #FFFFFF;
+}
+
+.loses{
+    margin-right: 3em;
+    color:#FFFFFF;
+}
+
+.section1 img{
+    margin-left: 9em;
 }
