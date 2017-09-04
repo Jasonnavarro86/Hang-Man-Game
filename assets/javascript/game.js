@@ -92,7 +92,7 @@ var myGame = {
   
       document.getElementById("wordBank").innerHTML = this.lettersGuessed;
   
-      this.guesses = this.lettersInWord.length + 5;
+      this.guesses = this.lettersInWord.length + 1;
       
       document.getElementById("numberOfGuesses"),innerHTML = this.guesses;
   
